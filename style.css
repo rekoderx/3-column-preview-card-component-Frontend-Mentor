@@ -8,6 +8,13 @@ body {
   font-size: 15px;
   color: #fff; }
 
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
 .container {
   background-color: #e38826;
   border-radius: 8px;
@@ -16,6 +23,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media screen and (min-width: 1440px) {
+    .container {
+      flex-direction: row;
+      width: 920px; } }
 
 .container .sedans-container,
 .container .suvs-container,
@@ -42,12 +53,28 @@ body {
   .container .suvs-container p,
   .container .luxury-container p {
     line-height: 25px; }
+  @media screen and (min-width: 1440px) {
+    .container .sedans-container,
+    .container .suvs-container,
+    .container .luxury-container {
+      width: 307px;
+      height: 500px; }
+      .container .sedans-container button:hover,
+      .container .suvs-container button:hover,
+      .container .luxury-container button:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer; } }
 
 .container .sedans-container {
   background-color: #e38826;
   border-radius: 8px 8px 0 0; }
   .container .sedans-container button {
     color: #e38826; }
+  @media screen and (min-width: 1440px) {
+    .container .sedans-container {
+      border-radius: 8px; } }
 
 .container .suvs-container {
   background-color: #006970;
@@ -60,6 +87,9 @@ body {
   border-radius: 0 0 8px 8px; }
   .container .luxury-container button {
     color: #004241; }
+  @media screen and (min-width: 1440px) {
+    .container .luxury-container {
+      border-radius: 0 8px 8px 0; } }
 
 .container .sedans-container button,
 .container .suvs-container button,
